@@ -32,18 +32,18 @@ nav button:hover{
     gap: 15px;
 }
 
-@media (max-width: 1000px){
+// @media (max-width: 1000px){
 
-    nav{
-        height: 100px;
-    }
+//     nav{
+//         height: 100px;
+//     }
 
-    nav button{
-        width: 80px;
-        height: 80px;
-    }
+//     nav button{
+//         width: 80px;
+//         height: 80px;
+//     }
 
-}
+// }
 
 @media (max-width: 750px){
 
@@ -58,7 +58,54 @@ nav button:hover{
     background-color: #5E2129;
     height: 100%;
     width: 500px;
-    min-width: 200px;
     box-shadow: 0px 0px 10px 1px black;
 }
 
+@media (max-width: 500px){
+    .side-bar{
+        width: 100%;
+    }
+}
+
+.side-head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.side-head button{
+    padding: 20px;
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    border: solid 1px black;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.side-group{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.side-lin{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.side-lin a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
