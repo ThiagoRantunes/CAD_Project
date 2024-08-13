@@ -19,10 +19,17 @@ nav button{
     border-radius: 10px;
     transition: 0.2s ease;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav button:hover{
     transform: translateY(-3px) scale(1.1);
+}
+
+nav button img{
+    width: 30px;
 }
 
 .nav-center{
@@ -59,6 +66,16 @@ nav button:hover{
     height: 100%;
     width: 500px;
     box-shadow: 0px 0px 10px 1px black;
+    transition: 300ms;
+}
+
+.side-bar-close{
+    position: absolute;
+    background-color: #5E2129;
+    height: 100%;
+    width: 0%;
+    box-shadow: 0px 0px 10px 1px black;
+    transition: 300ms;
 }
 
 @media (max-width: 500px){

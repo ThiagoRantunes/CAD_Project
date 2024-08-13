@@ -1,22 +1,22 @@
 <nav>
     <div class="nav-left">
         <button></button>
+        <button (click)="abriEfecharSideBar(false)" style="display: none;" ></button>
     </div>
     <div class="nav-center">
         <button></button>
         <button></button>
-        <button></button>
-        <button></button>
+        <button><img src="" alt=""></button>
     </div>
     <div class="nav-right">
-        <button></button>
+        <button><img src="https://cdn-icons-png.flaticon.com/512/171/171322.png" alt=""></button>
     </div>
 
 </nav>
 
-<div class="side-bar">
+<div [classList]="sideClass[sizeClass]">
     <div class="side-head">
-        <button></button>
+        <button (click)="abriEfecharSideBar(true)" ></button>
     </div>
     <div class="side-group">
         <div class="side-content">
