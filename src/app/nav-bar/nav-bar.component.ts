@@ -1,5 +1,11 @@
 import { style } from '@angular/animations';
 import { Component } from '@angular/core';
+import { Router, RouterModule, Routes } from '@angular/router';
+import { ListPageComponent } from '../list-page/list-page.component';
+
+// const routes: Routes = [
+//   { path: "listPage", component: ListPageComponent}
+// ]
 
 @Component({
   selector: 'app-nav-bar',
@@ -23,6 +29,7 @@ export class NavBarComponent {
       this.sizeClass = this.sizeClass - 1
     }
   }
+
 
 
 
