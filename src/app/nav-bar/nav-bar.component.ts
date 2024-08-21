@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,8 +10,9 @@ import { Component } from '@angular/core';
 })
 export class NavBarComponent {
 
+  sideClass = ["side-bar","side-bar-close"]
 
-  sideClass = ["side-bar","side-bar-class"]
+  sideComponents = ["side-main", "side-main-close"]
 
   sizeClass = 1
 
@@ -21,6 +23,7 @@ export class NavBarComponent {
       this.sizeClass = this.sizeClass - 1
     }
   }
+
 
 
 }

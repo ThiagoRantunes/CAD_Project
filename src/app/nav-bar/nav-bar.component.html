@@ -1,39 +1,66 @@
 <nav>
+
     <div class="nav-left">
-        <button></button>
-        <button (click)="abriEfecharSideBar(false)" style="display: none;" ></button>
+        <button>
+            <div class="btn-icon">
+
+            </div>
+        </button>
+        <button (click)="abriEfecharSideBar(false)" class="button-nav-side-bar" >
+            <div class="btn-icon">
+                
+            </div>
+        </button>
     </div>
     <div class="nav-center">
-        <button></button>
-        <button></button>
-        <button><img src="" alt=""></button>
+        <button>
+            <div class="btn-icon">
+                
+            </div>
+        </button>
+        <button>
+            <div class="btn-icon">
+                
+            </div>
+        </button>
+        <button>
+            <div class="btn-icon">
+                
+            </div>
+        </button>
     </div>
     <div class="nav-right">
-        <button><img src="https://cdn-icons-png.flaticon.com/512/171/171322.png" alt=""></button>
+        <button>
+            <div class="btn-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/171/171322.png" alt="">
+            </div>
+        </button>
     </div>
-
-</nav>
+        
+    </nav>
 
 <div [classList]="sideClass[sizeClass]">
-    <div class="side-head">
-        <button (click)="abriEfecharSideBar(true)" ></button>
-    </div>
-    <div class="side-group">
-        <div class="side-content">
-            <div class="side-lin">
-                <a href="">Teste</a>
-            </div>
-            <div class="side-lin">
-                <a href="">Teste</a>
-            </div>
-            <div class="side-lin">
-                <a href="">Teste</a>
-            </div>
-            <div class="side-lin">
-                <a href="">Teste</a>
-            </div>
-            <div class="side-lin">
-                <a href="">Teste</a>
+    <div [classList]="sideComponents[sizeClass]">
+        <div class="side-head">
+            <button (click)="abriEfecharSideBar(true)" class="button-nav-side-bar" ></button>
+        </div>
+        <div class="side-group">
+            <div class="side-content">
+                <div class="side-lin">
+                    <a href="">Teste</a>
+                </div>
+                <div class="side-lin">
+                    <a href="">Teste</a>
+                </div>
+                <div class="side-lin">
+                    <a href="">Teste</a>
+                </div>
+                <div class="side-lin">
+                    <a href="">Teste</a>
+                </div>
+                <div class="side-lin">
+                    <a href="">Teste</a>
+                </div>
             </div>
         </div>
     </div>
