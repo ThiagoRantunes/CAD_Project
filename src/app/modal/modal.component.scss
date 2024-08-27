@@ -1,0 +1,24 @@
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    border: solid 1px black;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    .modal-head{
+        width: 100%;
+        height: 35px;
+        border-bottom: solid 1px black;
+    }
+
+}
