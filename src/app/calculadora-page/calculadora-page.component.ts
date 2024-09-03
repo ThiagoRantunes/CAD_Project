@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { NavBarComponent } from '../nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-calculadora-page',
   standalone: true,
-  imports: [],
+  imports: [NavBarComponent],
   templateUrl: './calculadora-page.component.html',
   styleUrl: './calculadora-page.component.scss'
 })

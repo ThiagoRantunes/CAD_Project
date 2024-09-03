@@ -6,25 +6,16 @@ main{
     justify-content: center;
 }
 
-    // NAVBAR
-
-    .nav{
-      width: 100%;
-      height: 10%;
-      background-color: rgb(107, 0, 0);
-      position: fixed;
-      top: 0;
-    }
-
     // TELA DA CALCULADORA
     
 .content{
     background-color: rgb(252, 252, 252);
     width: 70%;
-    height: 85%;
+    height: 80%;
     display: flex;
     position: relative;
-    top: 5%;
+    margin-top: 90px;
+    margin-bottom: 2%;
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
@@ -47,7 +38,8 @@ main{
 
 .form{
   width: 100%;
-  height: 450px;
+//   height: 450px;
+height: 100%;
   background-color: transparent;
   display: grid;
   grid-template-columns: 50% 50%;
