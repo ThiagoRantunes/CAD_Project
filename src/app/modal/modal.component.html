@@ -1,14 +1,61 @@
 <main>
-    
+    <!-- Modal -->
     <div class="modal">
+        <!-- Cabeçario do Modal -->
         <div class="modal-head">
-    
+            <div class="modal-head-left">
+                <button (click)="whatScreen(true, false, false)" style="border-top-left-radius: 18px;">Lei: </button>
+                <button>Seções/Artigos</button>
+                <button>Avançados</button>
+            </div>
+            <div class="modal-head-rigth">
+                <button style="border-top-right-radius: 18px;" >
+                    <img src="https://cdn.icon-icons.com/icons2/1350/PNG/512/xbutton_87873.png">
+                </button>
+            </div>
         </div>
+
+        <!-- Conteúdo do Modal -->
+
         <div class="modal-main">
 
+            <!-- Modal Lei -->
+
             <div class="screen-modal1">
-        
+                <div class="group-inputs1">
+                    <div class="inputs1">
+                        <label>Número Lei:</label>
+                        <input type="number" class="style-global">
+                        <label>Data Promulgação:</label>
+                        <input type="date" class="style-global">
+                    </div>
+                    <div class="inputs2">
+                        <label>Titulo Lei:</label>
+                        <input type="text" class="style-global">
+                        <label>Org. Emissor:</label>
+                        <input type="text" class="style-global">
+                    </div>
+                </div>
+                <div class="group-inputs2">
+                    <div class="inputs3">
+                        <label>Preâmbulo:</label>
+                        <textarea name="" id="" class="style-global">
+    
+                        </textarea>
+                        <label>Ementa:</label>
+                        <textarea name="" id="" class="style-global">
+    
+                        </textarea>
+                    </div>
+                </div>
+                <div class="button-modal">
+                    <div class="group-button">
+                        <button>Salvar</button>
+                    </div>
+                </div>
             </div>
+
+
         
             <div class="screen-modal2">
         

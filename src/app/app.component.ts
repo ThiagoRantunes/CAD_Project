@@ -4,11 +4,12 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ControlerPageComponent } from './controler-page/controler-page.component';
 import { ListPageComponent } from './list-page/list-page.component';
 import { ModalComponent } from './modal/modal.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavBarComponent, ControlerPageComponent, ListPageComponent, ModalComponent],
+  imports: [RouterOutlet, NavBarComponent, ControlerPageComponent, ListPageComponent, ModalComponent, LoginPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
