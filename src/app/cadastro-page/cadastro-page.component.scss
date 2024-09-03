@@ -6,7 +6,7 @@ main{
     justify-content: center;
     }
     
-    // TELA DE LOGIN
+    // TELA DE CADASTRO
     
     .content{
     background-color: transparent;
@@ -17,25 +17,25 @@ main{
     align-items: center;
     }
     
-    .login {
-    background:linear-gradient(300deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    .cadastro {
+    background:linear-gradient(300deg, #8b8b8b, #d8d8d8, #9b9b9b, #e4e4e4, #707070);
     width: 400px;
     height: 500px;
     border-radius: 100px 0 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 300px;
+    margin-right: 300px;
     position: relative;
     z-index: 3;
-    box-shadow: -25px 0px 20px 0 rgba(0, 0, 0, 0.548);
+    box-shadow: 25px 0px 20px 0 rgba(0, 0, 0, 0.548);
     }
     
     .logo {
     width: 400px;
     height: 400px;
     background-color: transparent;
-    margin-right: 290px;
+    margin-left: 290px;
     position: absolute;
     z-index: 1;
     }
@@ -80,21 +80,6 @@ main{
       bottom: 20px;
       text-decoration: underline;
       text-underline-position: under;
-    }
-    
-    .hiperlink{
-      color: #AA771C;
-      transition: 0.5s;
-    }
-    .hiperlink:hover{
-      color: #000000;
-    }
-    
-    .informativo{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    
     }
     
     // INPUT
@@ -170,12 +155,12 @@ main{
       background: linear-gradient(300deg, #000000, #494949, #000000, #494949, #000000);
       .lin{
        padding: 2px;
-       background: linear-gradient(300deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+       background: linear-gradient(300deg, #727272, #c7c7c7, #858585, #d6d6d6, #494949);
        border-radius: 5px;
        width: 95%;
-       .log-btn{
+       .cad-btn{
          background: linear-gradient(300deg, #000000, #494949, #000000, #494949, #000000);
-         color: linear-gradient(300deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+         color: linear-gradient(300deg, #727272, #c7c7c7, #858585, #d6d6d6, #494949);
          border-radius: 4px;
          height: 25px;
          display: flex;
@@ -188,7 +173,7 @@ main{
      transition: 0.5ms;
      letter-spacing: 5px;
      .lin{
-       box-shadow: 0px 0px 2px 1px #B38728;
+       box-shadow: 0px 0px 2px 1px #474747;
        transition: 400ms;
        }
      }
@@ -202,7 +187,7 @@ main{
         justify-content: center;
         align-items: center;
         }
-      .login{
-        margin-left: 0;
+      .cadastro{
+        margin-right: 0;
       }
      }
