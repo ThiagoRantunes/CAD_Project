@@ -78,7 +78,7 @@ height: 100%;
 }
 
 .select{
-  font-size: 20px;
+  font-size: 16px;
   width: 100%;
   border: none;
   border-bottom: 2px solid #747474;
@@ -226,7 +226,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
                 overflow-y: auto;
               }
               .lei{
-                height: 50px;
+                height: 40px;
                 width: 90%;
                 margin-left: 5%;
                 margin-top: 3%;
@@ -264,7 +264,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
   .content{
     grid-template-columns: 100%;
+    border: none;
+    box-shadow: none;
+    width: 90%;
   }
+  .input .label{
+    font-size: 2.5vw;
+  }
+  .input input[type="text"]:focus ~ .label,
+  .input input[type="text"]:valid ~ .label {
+  font-size: 2.5vw;
+}
+  .input input[type="text"]:focus,
+  .input input[type="text"]:valid{
+  font-size: 2.5vw;
+}
+.input input[type="date"]:focus ~ .label,
+.input input[type="date"]:valid ~ .label {
+  font-size: 2.5vw;
+}
+.input input[type="date"]:focus,
+.input input[type="date"]:valid {
+  font-size: 2.5vw;
+}
+.select:focus ~ .label,
+.select:valid ~ .label {
+  font-size: 2.5vw;
+}
+.select{
+  font-size: 2.5vw;
+}
 }
 
 .box-right{
@@ -292,8 +321,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .crimes{
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
   width: 90%;
 }
 
