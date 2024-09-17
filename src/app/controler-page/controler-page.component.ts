@@ -8,6 +8,8 @@ import { NavBarComponent } from '../nav-bar/nav-bar.component';
   templateUrl: './controler-page.component.html',
   styleUrl: './controler-page.component.scss'
 })
+
+
 export class ControlerPageComponent {
 
 }

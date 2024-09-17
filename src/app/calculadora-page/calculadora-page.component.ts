@@ -8,7 +8,7 @@ import { NavBarComponent } from '../nav-bar/nav-bar.component';
   templateUrl: './calculadora-page.component.html',
   styleUrl: './calculadora-page.component.scss'
 })
-export class CalculadoraPageComponent {
+export default class CalculadoraPageComponent {
 
   openCloseSelect = ["descricao-select-close", "descricao-select"];
 
