@@ -15,12 +15,12 @@ nav button{
     padding: 20px;
     width: 45px;
     height: 45px;
-    // border: solid 3px rgb(255, 255, 255);
     border: none;
+    border: solid 3px rgb(255, 255, 255);
     background-color: transparent;
     border-radius: 10px;
     transition: 0.2s ease;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 nav button:hover{
@@ -29,7 +29,7 @@ nav button:hover{
 
 nav button img{
     width: 30px;
-    filter: invert(1);
+    filter: invert(100%);
 }
 
 .nav-center{

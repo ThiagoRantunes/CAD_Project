@@ -10,7 +10,6 @@ main{
     width: 90%;
     height: 550px;
     border-radius: 20px;
-    border: solid 1px black;
     background-color: rgb(224, 224, 224);
     display: flex;
     align-items: start;
@@ -32,7 +31,6 @@ main{
                 padding: 5px;
                 height: 100%;
                 border: none;
-                border-right: solid 1px black;
                 background-color: transparent;
                 font-weight: bold;
                 transition: 200ms;
@@ -99,6 +97,7 @@ main{
                     input{
                         width: 35vw;
                         padding: 10px;
+                        background-color: rgb(140, 140, 140);
                     }
                 }
     
@@ -112,6 +111,7 @@ main{
                     input{
                         width: 35vw;
                         padding: 10px;
+                        background-color: rgb(140, 140, 140);
                     }
                 }
             }
@@ -135,6 +135,7 @@ main{
                         margin-bottom: 10px;
                         padding: 5px;
                         columns: 10;
+                        background-color: rgb(140, 140, 140);
                     }
                 }
             }
@@ -153,9 +154,14 @@ main{
                     width: 200px;
                     height: 40px;
                     border: none;
-                    background-color: rgb(17, 248, 17);
+                    background-color: rgb(130, 0, 0);
                     border-radius: 10px;
                     color: white;
+                    transition: 0.5s;
+                }
+                button:hover{
+                    letter-spacing: 5px;
+                    transition: 0.5s;
                 }
             }
         }
