@@ -79,8 +79,12 @@ main{
         justify-content: center;
         flex-wrap: wrap;
 
+
+        // MODAL DE LEIS
+
         .screen-modal1{
             width: 100%;
+            display: none;
 
 
             .group-inputs1{
@@ -135,6 +139,65 @@ main{
                         margin-bottom: 10px;
                         padding: 5px;
                         columns: 10;
+                    }
+                }
+            }
+
+        }
+
+        .screen-modal2{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .group-inputs1{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .lin-title{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    width: 100%;
+                    margin-bottom: 10px;
+
+                    label{
+                        margin-left: 25px;
+                    }
+                }
+
+                .group-select1{
+                    width: 95%;
+                    height: 150px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    background-color: gray;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                    
+                    .select-cap{
+                        width: 95%;
+                        height: 40px;
+                        border-radius: 10px;
+                        margin-top: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        background-color: rgb(201, 201, 201);
+
+                        button{
+                            width: 30px;
+
+                            img{
+                                width: 100%;
+                            }
+                        }
                     }
                 }
             }
