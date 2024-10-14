@@ -150,6 +150,7 @@ main{
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-wrap: wrap;
 
             .group-inputs1{
                 width: 100%;
@@ -164,6 +165,7 @@ main{
                     justify-content: start;
                     width: 100%;
                     margin-bottom: 10px;
+                    margin-top: 20px;
 
                     label{
                         margin-left: 25px;
@@ -188,15 +190,68 @@ main{
                         margin-top: 10px;
                         display: flex;
                         align-items: center;
-                        justify-content: space-around;
+                        justify-content: space-between;
                         background-color: rgb(201, 201, 201);
+
+                        h4{
+                            margin-left: 10px;
+                        }
 
                         button{
                             width: 30px;
-
+                            border: none;
+                            background: transparent;
+                            transition: 200ms;
+                            margin-right: 10px;
                             img{
                                 width: 100%;
                             }
+                        }
+
+                        button:hover{
+                            filter: contrast(5);
+                            transition: 200ms;
+                        }
+                    }
+                }
+                .group-select2{
+                    width: 95%;
+                    height: 150px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    background-color: gray;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    overflow-y: scroll;
+
+                    .select-cap{
+                        width: 95%;
+                        height: 40px;
+                        border-radius: 10px;
+                        margin-top: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background-color: rgb(201, 201, 201);
+                        h4{
+                            margin-left: 10px;
+                        }
+
+                        button{
+                            width: 30px;
+                            border: none;
+                            background: transparent;
+                            transition: 200ms;
+                            margin-right: 10px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+
+                        button:hover{
+                            filter: contrast(5);
+                            transition: 200ms;
                         }
                     }
                 }
@@ -219,6 +274,7 @@ main{
                     background-color: rgb(17, 248, 17);
                     border-radius: 10px;
                     color: white;
+                    margin-top: 30px;
                 }
             }
         }
