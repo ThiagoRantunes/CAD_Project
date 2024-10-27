@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -19,4 +19,9 @@ export class ModalComponent {
     this.isAvancados = isPage3;
   }
 
+  @Output() isCloseModal: EventEmitter<any> = new EventEmitter();
+
+  closeModal(){
+    this.isCloseModal.emit();
+  }
 }
