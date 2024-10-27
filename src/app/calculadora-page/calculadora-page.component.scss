@@ -21,6 +21,19 @@ main{
     border-radius: 15px;
     border: solid 1px black;
     box-shadow: 5px 15px 15px 0 rgba(0, 0, 0, 0.589);
+    a{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      right: 2%;
+      bottom: 40%;
+      grid-area: box-bottom;
+      border: 1px solid  black;
+    }
 }
 
 .box-left{
@@ -210,9 +223,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     justify-items: center;
     align-items: center;
     grid-template-areas: 
+      "box-bottom"
       "box-left"
       "box-right";
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 10% 50% 40%;
     grid-template-columns: 100%;
         .box-right{
           width: 100%;
@@ -230,6 +244,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
                 margin-left: 5%;
                 margin-top: 3%;
               }
+        }
+        a{
+          width: 40px;
+          height: 40px;
+          top: 10%;
+          right: 50%;
         }
         .box-left{
           width: 100%;
