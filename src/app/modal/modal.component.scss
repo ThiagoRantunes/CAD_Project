@@ -4,13 +4,14 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 0;
 }
 
 .modal{
     width: 90%;
     height: 550px;
     border-radius: 20px;
-    border: solid 1px black;
     background-color: rgb(224, 224, 224);
     display: flex;
     align-items: start;
@@ -32,7 +33,6 @@ main{
                 padding: 5px;
                 height: 100%;
                 border: none;
-                border-right: solid 1px black;
                 background-color: transparent;
                 font-weight: bold;
                 transition: 200ms;
@@ -79,8 +79,12 @@ main{
         justify-content: center;
         flex-wrap: wrap;
 
+
+        // MODAL DE LEIS
+
         .screen-modal1{
             width: 100%;
+            display: grid;
 
 
             .group-inputs1{
@@ -99,6 +103,7 @@ main{
                     input{
                         width: 35vw;
                         padding: 10px;
+                        background-color: rgb(140, 140, 140);
                     }
                 }
     
@@ -112,6 +117,7 @@ main{
                     input{
                         width: 35vw;
                         padding: 10px;
+                        background-color: rgb(140, 140, 140);
                     }
                 }
             }
@@ -135,6 +141,121 @@ main{
                         margin-bottom: 10px;
                         padding: 5px;
                         columns: 10;
+                        background-color: rgb(140, 140, 140);
+                    }
+                }
+            }
+
+        }
+
+        .screen-modal2{
+            width: 100%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .group-inputs1{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .lin-title{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+
+                    label{
+                        margin-left: 25px;
+                    }
+                }
+
+                .group-select1{
+                    width: 95%;
+                    height: 150px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    background-color: gray;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                    
+                    .select-cap{
+                        width: 95%;
+                        height: 40px;
+                        border-radius: 10px;
+                        margin-top: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background-color: rgb(201, 201, 201);
+
+                        h4{
+                            margin-left: 10px;
+                        }
+
+                        button{
+                            width: 30px;
+                            border: none;
+                            background: transparent;
+                            transition: 200ms;
+                            margin-right: 10px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+
+                        button:hover{
+                            filter: contrast(5);
+                            transition: 200ms;
+                        }
+                    }
+                }
+                .group-select2{
+                    width: 95%;
+                    height: 150px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    background-color: gray;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    overflow-y: scroll;
+
+                    .select-cap{
+                        width: 95%;
+                        height: 40px;
+                        border-radius: 10px;
+                        margin-top: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background-color: rgb(201, 201, 201);
+                        h4{
+                            margin-left: 10px;
+                        }
+
+                        button{
+                            width: 30px;
+                            border: none;
+                            background: transparent;
+                            transition: 200ms;
+                            margin-right: 10px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+
+                        button:hover{
+                            filter: contrast(5);
+                            transition: 200ms;
+                        }
                     }
                 }
             }
@@ -148,14 +269,19 @@ main{
             justify-content: end;
 
             .group-button{
-
                 button{
                     width: 200px;
                     height: 40px;
                     border: none;
-                    background-color: rgb(17, 248, 17);
+                    background-color: rgb(130, 0, 0);
                     border-radius: 10px;
                     color: white;
+                    margin-top: 30px;
+                    transition: 0.5s;
+                }
+                button:hover{
+                    letter-spacing: 5px;
+                    transition: 0.5s;
                 }
             }
         }
