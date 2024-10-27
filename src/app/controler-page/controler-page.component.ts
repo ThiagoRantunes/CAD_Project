@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './controler-page.component.html',
   styleUrl: './controler-page.component.scss'
 })
+
+
 export class ControlerPageComponent {
 
   isModal: boolean = false;

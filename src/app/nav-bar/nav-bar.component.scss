@@ -1,7 +1,9 @@
+$red_color: #500000;
+
 nav{
     width: 100%;
     height: 70px;
-    background-color: #5E2129;
+    background-color: $red_color;
     box-shadow: 0px 0px 10px 1px black;
     display: flex;
     align-items: center;
@@ -13,11 +15,12 @@ nav button{
     padding: 20px;
     width: 45px;
     height: 45px;
-    border: solid 3px black;
+    border: none;
+    border: solid 3px rgb(255, 255, 255);
     background-color: transparent;
     border-radius: 10px;
     transition: 0.2s ease;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 nav button:hover{
@@ -26,6 +29,7 @@ nav button:hover{
 
 nav button img{
     width: 30px;
+    filter: invert(100%);
 }
 
 .nav-center{
@@ -70,7 +74,7 @@ nav button img{
 
 .side-bar{
     position: fixed;
-    background-color: #5E2129;
+    background-color: $red_color;
     height: 100%;
     width: 500px;
     box-shadow: 0px 0px 10px 1px black;
@@ -106,7 +110,9 @@ nav button img{
     width: 45px;
     height: 45px;
     margin: 10px;
-    border: solid 3px black;
+    // border: solid 3px black;
+    border: none;
+    filter: invert(1);
     background-color: transparent;
     border-radius: 10px;
     transition: 0.2s ease;
@@ -134,7 +140,7 @@ nav button img{
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
-    color: black;
+    color: white;
     text-align: center;
 }
 

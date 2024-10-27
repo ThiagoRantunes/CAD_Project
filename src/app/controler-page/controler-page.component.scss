@@ -1,4 +1,4 @@
-$cor_primaria: #5E2129;
+$cor_primaria: #6e1d28;
 
 main{
     width: 100%;
@@ -18,7 +18,7 @@ main{
 .card{
     width: 250px;
     height: 350px;
-    border: solid 5px black;
+    border: solid 3px rgb(255, 255, 255);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -32,7 +32,7 @@ main{
 }
 
 .card h1{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .card-img{
@@ -40,6 +40,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    filter: invert(100%);
 }
 
 .card img{
