@@ -3,11 +3,12 @@ import { NavBarComponent } from '../nav-bar/nav-bar.component';
 import { ModalComponent } from '../modal/modal.component';
 import { CommonModule } from '@angular/common';
 import CalculadoraPageComponent from '../calculadora-page/calculadora-page.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-controler-page',
   standalone: true,
-  imports: [NavBarComponent, ModalComponent, CommonModule, CalculadoraPageComponent],
+  imports: [RouterOutlet ,NavBarComponent, ModalComponent, CommonModule, CalculadoraPageComponent],
   templateUrl: './controler-page.component.html',
   styleUrl: './controler-page.component.scss'
 })

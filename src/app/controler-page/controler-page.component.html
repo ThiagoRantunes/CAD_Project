@@ -9,11 +9,13 @@
             </div>
             <h1>Cadastrar Leis & Artígos</h1>
         </div>
-        <div class="card">
-            <div class="card-img">
-                <img src="https://cdn-icons-png.flaticon.com/512/171/171322.png">
-            </div>
-            <h1>Listar Leis & Artígos</h1>
+        <div class="card"  >
+            <a href="list">
+                <div class="card-img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/171/171322.png">
+                </div>
+                <h1>Listar Leis & Artígos</h1>
+            </a>
         </div>
         <div class="card" (click)="showCalculadora()" >
             <div class="card-img">
@@ -26,4 +28,5 @@
     <app-modal *ngIf="isModal" (isCloseModal)="showModal()" ></app-modal>
     <app-calculadora-page *ngIf="isCalculadora"></app-calculadora-page>
 </main>
+
 
