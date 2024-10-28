@@ -5,8 +5,8 @@
         <div class="modal-head">
             <div class="modal-head-left">
                 <button (click)="whatScreen(true, false, false)" style="border-top-left-radius: 18px;">Lei: </button>
-                <button>Seções/Artigos</button>
-                <button>Avançados</button>
+                <button (click)="whatScreen(false, true, false)" >Seções/Artigos</button>
+                <button (click)="whatScreen(false, false, true)" >Avançados</button>
             </div>
             <div class="modal-head-rigth">
                 <button (click)="closeModal()" style="border-top-right-radius: 18px;" >
@@ -21,7 +21,7 @@
 
             <!-- Modal Lei -->
 
-            <div class="screen-modal1">
+            <div class="screen-modal1" *ngIf="isLeiScreen">
                 <div class="group-inputs1">
                     <div class="inputs1">
                         <label>Número Lei:</label>
@@ -57,7 +57,7 @@
 
 
         
-            <div class="screen-modal2">
+            <div class="screen-modal2" *ngIf="isSecoesArtigos">
                 <div class="group-inputs1">
                     <div class="lin-title">
                         <label>Capitulo:</label>
@@ -91,7 +91,7 @@
                 </div>
             </div>
         
-            <div class="screnn-modal3">
+            <div class="screnn-modal3" *ngIf="isAvancados">
         
             </div>
             
