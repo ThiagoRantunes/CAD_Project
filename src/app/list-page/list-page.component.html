@@ -18,7 +18,7 @@
         <!-- Select -->
          
         <div class="group-select">
-            <div class="select">
+            <div class="select" (click)="openSelect()">
                 <div class="select-left">
                     <h3>Lei: </h3>
                 </div>
@@ -26,7 +26,7 @@
                     <button>
                         <img src="https://cdn-icons-png.flaticon.com/512/5996/5996831.png">
                     </button>
-                    <button (click)="openSelect()">
+                    <button >
                         <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" [classList]="arrowAnimation[valueSelect]">
                     </button>
                 </div> 
