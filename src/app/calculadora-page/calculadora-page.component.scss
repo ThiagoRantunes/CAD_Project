@@ -1,12 +1,4 @@
-main{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-}
+main{width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;position: absolute;top: 0;}
     // TELA DA CALCULADORA
 .content{
     background-color: rgb(252, 252, 252);
@@ -66,6 +58,7 @@ input{
   border: none;
 }
 select{
+  background-color: transparent;
   outline: none;
   border: none;
   width: 100%;
@@ -184,9 +177,13 @@ select{
     font-size: 2.5vw;
   }
   input{
+    width: 100%;
     font-size: 2.5vw;
   }
   .select{
+    font-size: 2.5vw;
+  }
+  .check{
     font-size: 2.5vw;
   }
 }
