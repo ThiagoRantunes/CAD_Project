@@ -22,7 +22,7 @@ export class ControlerPageComponent {
     this.isModal = !this.isModal;
   }
 
-  isCalculadora: boolean = true;
+  isCalculadora: boolean = false;
 
   showCalculadora(){
     this.isCalculadora = !this.isCalculadora;

@@ -11,17 +11,10 @@ import { NavBarComponent } from '../nav-bar/nav-bar.component';
 export class ListPageComponent {
 
   openCloseSelect = ["descricao-select-close", "descricao-select"];
-
   arrowAnimation = ["arrow-icon", "arrow-icon-close"];
+  valueSelect = [0, 0, 0, 0, 0]; // Adicionado para múltiplos selects
 
-  valueSelect = 0;
-
-  openSelect(){
-    if(this.valueSelect == 0){
-      this.valueSelect = this.valueSelect + 1;
-    }else{
-      this.valueSelect = this.valueSelect - 1;
-    }
+  openSelect(index: number) {
+    this.valueSelect[index] = this.valueSelect[index] === 0 ? 1 : 0;
   }
-
 }

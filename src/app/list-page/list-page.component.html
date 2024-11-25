@@ -3,9 +3,7 @@
 <main>
     <div class="head-list">
         <div class="search-bar">
-
-                <input type="text" placeholder="Pesquisar">
-
+            <input type="text" placeholder="Pesquisar">
             <div class="button-bar">
                 <button>
                     <img src="https://cdn-icons-png.flaticon.com/512/64/64673.png">
@@ -15,10 +13,9 @@
     </div>
     <div class="main-select">
 
-        <!-- Select -->
-         
+        <!-- Group Select 1 -->
         <div class="group-select">
-            <div class="select" (click)="openSelect()">
+            <div class="select" (click)="openSelect(0)">
                 <div class="select-left">
                     <h3>Lei: </h3>
                 </div>
@@ -26,18 +23,102 @@
                     <button>
                         <img src="https://cdn-icons-png.flaticon.com/512/5996/5996831.png">
                     </button>
-                    <button >
-                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" [classList]="arrowAnimation[valueSelect]">
+                    <button>
+                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" [classList]="arrowAnimation[valueSelect[0]]">
                     </button>
                 </div> 
             </div>
-            <div [classList]="openCloseSelect[valueSelect]">
+            <div [classList]="openCloseSelect[valueSelect[0]]">
                 <div class="group-text">
-                    <p>descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma lei descrição sobre uma leidescrição sobre uma lei descrição sobre uma leidescrição sobre uma lei </p>
+                    <p>Descrição sobre uma lei 1...</p>
                 </div>
             </div>
         </div>
 
+        <!-- Group Select 2 -->
+        <div class="group-select">
+            <div class="select" (click)="openSelect(1)">
+                <div class="select-left">
+                    <h3>Lei: </h3>
+                </div>
+                <div class="select-right">
+                    <button>
+                        <img src="https://cdn-icons-png.flaticon.com/512/5996/5996831.png">
+                    </button>
+                    <button>
+                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" [classList]="arrowAnimation[valueSelect[1]]">
+                    </button>
+                </div> 
+            </div>
+            <div [classList]="openCloseSelect[valueSelect[1]]">
+                <div class="group-text">
+                    <p>Descrição sobre um regulamento...</p>
+                </div>
+            </div>
+        </div>
 
+        <!-- Group Select 3 -->
+        <div class="group-select">
+            <div class="select" (click)="openSelect(2)">
+                <div class="select-left">
+                    <h3>Lei: </h3>
+                </div>
+                <div class="select-right">
+                    <button>
+                        <img src="https://cdn-icons-png.flaticon.com/512/5996/5996831.png">
+                    </button>
+                    <button>
+                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" [classList]="arrowAnimation[valueSelect[2]]">
+                    </button>
+                </div> 
+            </div>
+            <div [classList]="openCloseSelect[valueSelect[2]]">
+                <div class="group-text">
+                    <p>Descrição sobre uma norma...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="group-select">
+            <div class="select" (click)="openSelect(3)">
+                <div class="select-left">
+                    <h3>Lei: </h3>
+                </div>
+                <div class="select-right">
+                    <button>
+                        <img src="https://cdn-icons-png.flaticon.com/512/5996/5996831.png">
+                    </button>
+                    <button>
+                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" [classList]="arrowAnimation[valueSelect[2]]">
+                    </button>
+                </div> 
+            </div>
+            <div [classList]="openCloseSelect[valueSelect[3]]">
+                <div class="group-text">
+                    <p>Descrição sobre uma norma...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="group-select">
+            <div class="select" (click)="openSelect(4)">
+                <div class="select-left">
+                    <h3>Lei: </h3>
+                </div>
+                <div class="select-right">
+                    <button>
+                        <img src="https://cdn-icons-png.flaticon.com/512/5996/5996831.png">
+                    </button>
+                    <button>
+                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" [classList]="arrowAnimation[valueSelect[2]]">
+                    </button>
+                </div> 
+            </div>
+            <div [classList]="openCloseSelect[valueSelect[4]]">
+                <div class="group-text">
+                    <p>Descrição sobre uma norma...</p>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
