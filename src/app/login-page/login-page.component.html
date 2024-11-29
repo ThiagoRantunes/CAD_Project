@@ -1,40 +1,35 @@
 <main>
     <div class="content">
-
-        <div class="logo"><img class="img" src="https://project-law-api.kesug.com/Logo.png" alt=""></div>
-
+        <div class="logo">
+            <img class="img" src="https://i.ibb.co/7bf3CZq/2-Photoroom.png" alt="">
+        </div>
         <div class="login">
-
-
             <div class="form">
-
                 <h3>FAÇA LOGIN</h3>
-                
-                
                 <div class="input-container">
-                    <input type="text" id="input" required="">
-                    <label for="input" class="label">E-mail</label>
+                    <input type="text" id="email" (input)="updateEmail($event)" required>
+                    <label for="email" class="label">E-mail</label>
                     <div class="underline"></div>
                 </div>
                 <div class="input-container">
-                    <input type="text" id="input" required="">
-                    <label for="input" class="label">Senha</label>
+                    <input type="password" id="password" (input)="updatePassword($event)" required>
+                    <label for="password" class="label">Senha</label>
                     <div class="underline"></div>
                 </div>
-
-                <p class="informativo">Esqueceu sua Senha? <a href="#" class="hiperlink">Recuperar</a></p>
+                <p class="informativo">
+                    Esqueceu sua Senha? <a href="#" class="hiperlink">Recuperar</a>
+                </p>
                 <div class="content-button">
-                    <button class="btn">
+                    <button class="btn" (click)="login()">
                         <div class="lin">
                             <p class="log-btn">LOGAR</p>
                         </div>
-                    </button>   
-                    <p style="margin-top: 10px;" class="informativo">Não possui conta? <a href="cadastro" class="hiperlink">Cadastrar-se</a></p>
+                    </button>
+                    <p style="margin-top: 10px;" class="informativo">
+                        Não possui conta? <a href="cadastro" class="hiperlink">Cadastrar-se</a>
+                    </p>
                 </div>
-                
             </div>
-            
         </div>
     </div>
 </main>
- 
