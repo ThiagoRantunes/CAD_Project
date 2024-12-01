@@ -1,29 +1,25 @@
 import { Component } from '@angular/core';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
-
-// import { addIcons } from "ionicons";
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common'
 
 @Component({
   selector: 'app-calculadora-page',
   standalone: true,
-  imports: [NavBarComponent],
+  imports: [NavBarComponent, FormsModule, CommonModule],
   templateUrl: './calculadora-page.component.html',
-  styleUrl: './calculadora-page.component.scss'
+  styleUrls: ['./calculadora-page.component.scss']
 })
 export default class CalculadoraPageComponent {
+  crimes = [
+    { lei: 'Lei Art. 123', agravantes: 'Detalhes do agravante 1' },
+    { lei: 'Lei Art. 456', agravantes: 'Detalhes do agravante 2' },
+    { lei: 'Lei Art. 789', agravantes: 'Detalhes do agravante 3' }
+  ];
 
-  openCloseSelect = ["descricao-select-close", "descricao-select"];
+  openCloseSelect: boolean[] = this.crimes.map(() => false);
 
-  arrowAnimation = ["arrow-icon", "arrow-icon-close"];
-
-  valueSelect = 0;
-
-  openSelect(){
-    if(this.valueSelect == 0){
-      this.valueSelect = this.valueSelect + 1;
-    }else{
-      this.valueSelect = this.valueSelect - 1;
-    }
+  toggleSelect(index: number): void {
+    this.openCloseSelect[index] = !this.openCloseSelect[index];
   }
-
 }

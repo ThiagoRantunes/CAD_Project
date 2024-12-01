@@ -82,43 +82,25 @@
         <div class="box-right">
             <label class="crimes">CRIMES (ARTIGOS SELECIONADOS)</label>
             <div class="artigo">
-
-                <div class="list">
-                    <div class="lei">
-                        <div class="text-lei">
-                            Leis. art 123
-                        </div>
-                        <button (click)="openSelect()" class="btn-img">
-                            <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" [classList]="arrowAnimation[valueSelect]">
-                        </button>
-                    </div>
-                    <div class="agravante">
-                        <div [classList]="openCloseSelect[valueSelect]">
-                            <div class="group-modal">
-                                <p>AGRAVANTES</p><br>
-                                <p>art | dasdasd</p>
-                            </div>
-                        </div>
-                    </div>
+              <div *ngFor="let crime of crimes; let i = index" class="list">
+                <div class="lei">
+                  <div class="text-lei">
+                    {{ crime.lei }}
+                  </div>
+                  <button (click)="toggleSelect(i)" class="btn-img">
+                    <img 
+                      src="https://cdn-icons-png.flaticon.com/512/60/60758.png" 
+                      [ngClass]="{ 'arrow-icon': !openCloseSelect[i], 'arrow-icon-close': openCloseSelect[i] }">
+                  </button>
                 </div>
-
-                <!-- <div class="list">
-                    <div class="lei">
-                        <button (click)="openSelect()" class="btn-img">
-                            <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" [classList]="arrowAnimation[valueSelect]">
-                        </button>
-                    </div>
-                    <div class="agravante">
-                        <div [classList]="openCloseSelect[valueSelect]">
-                            <div class="group-modal">
-                                <p>descrição sobre uma lei descrição</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            
-
+                <div class="agravante" *ngIf="openCloseSelect[i]">
+                  <div class="group-modal">
+                    <p>AGRAVANTES</p><br>
+                    <p>{{ crime.agravantes }}</p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
 </main>
