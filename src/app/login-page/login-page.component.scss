@@ -147,6 +147,28 @@ main{
       transform: scaleX(1);
     }
     
+    .input-container input[type="password"] {
+      font-size: 20px;
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid rgb(0, 0, 0);
+      padding: 5px 0;
+      background-color: transparent;
+      outline: none;
+    }
+    
+    .input-container input[type="password"]:focus ~ .label,
+    .input-container input[type="password"]:valid ~ .label {
+      top: -20px;
+      font-size: 16px;
+      color: #000000;
+    }
+    
+    .input-container input[type="password"]:focus ~ .underline,
+    .input-container input[type="password"]:valid ~ .underline {
+      transform: scaleX(1);
+    }
+    
     
     //   BOTÃO
     
