@@ -24,7 +24,9 @@
                         <img src="https://cdn-icons-png.flaticon.com/512/5996/5996831.png">
                     </button>
                     <button>
-                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" [classList]="arrowAnimation[valueSelect[0]]">
+                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" 
+                        [class.arrow-icon]="valueSelect[0] === 0" 
+                        [class.arrow-icon-close]="valueSelect[0] === 1">
                     </button>
                 </div> 
             </div>
@@ -46,7 +48,9 @@
                         <img src="https://cdn-icons-png.flaticon.com/512/5996/5996831.png">
                     </button>
                     <button>
-                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" [classList]="arrowAnimation[valueSelect[1]]">
+                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" 
+                        [class.arrow-icon]="valueSelect[1] === 0" 
+                        [class.arrow-icon-close]="valueSelect[1] === 1">
                     </button>
                 </div> 
             </div>
@@ -68,7 +72,9 @@
                         <img src="https://cdn-icons-png.flaticon.com/512/5996/5996831.png">
                     </button>
                     <button>
-                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" [classList]="arrowAnimation[valueSelect[2]]">
+                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" 
+                        [class.arrow-icon]="valueSelect[2] === 0" 
+                        [class.arrow-icon-close]="valueSelect[2] === 1">
                     </button>
                 </div> 
             </div>
@@ -89,7 +95,9 @@
                         <img src="https://cdn-icons-png.flaticon.com/512/5996/5996831.png">
                     </button>
                     <button>
-                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" [classList]="arrowAnimation[valueSelect[2]]">
+                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" 
+                        [class.arrow-icon]="valueSelect[3] === 0" 
+                        [class.arrow-icon-close]="valueSelect[3] === 1">
                     </button>
                 </div> 
             </div>
@@ -110,7 +118,9 @@
                         <img src="https://cdn-icons-png.flaticon.com/512/5996/5996831.png">
                     </button>
                     <button>
-                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" [classList]="arrowAnimation[valueSelect[2]]">
+                        <img src="https://cdn-icons-png.flaticon.com/512/60/60758.png" 
+                        [class.arrow-icon]="valueSelect[4] === 0" 
+                        [class.arrow-icon-close]="valueSelect[4] === 1">
                     </button>
                 </div> 
             </div>
