@@ -31,17 +31,42 @@ export default class CalculadoraPageComponent {
 
   historicoCalculadora: number[] = [];
 
+  numberReal: number = 0;
+
   calcular(){
+    console.log(this.selectCrime)
     this.calcularCrime.push(this.selectCrime);
     if(this.calcularCrime[1] != null){
-      this.historicoCalculadora.push(this.calcularCrime[0] + this.calcularCrime[1])
+      this.historicoCalculadora.push(eval(this.calcularCrime[0] + "+" + this.calcularCrime[1]))
       this.calcularCrime.pop
       this.calcularCrime.pop
+  
     }
     if(this.historicoCalculadora[0] != null){
-      this.historicoCalculadora.push(this.historicoCalculadora[0] + this.calcularCrime[0])
-      alert(this.historicoCalculadora[0])
+      this.numberReal = eval(this.historicoCalculadora[0] + "+" + this.calcularCrime[0])
+      console.log(this.numberReal)
+      this.historicoCalculadora.push(this.numberReal);
+      // alert(this.historicoCalculadora[0])
     }
 
   }
+    nomeDoReu: String = "";
+    idadeDoReu: number = 0;
+    dataDoCrime: String = "";
+    atenuantes: String = "";
+    agravantes: String = "";
+    multa: any = "";
+    
+    limparDados(){
+      this.nomeDoReu = "";
+      this.idadeDoReu = 0;
+      this.dataDoCrime = "";
+      this.atenuantes = "";
+      this.agravantes = "";
+      this.numberReal = 0;
+      this.multa = "";
+      this.calcularCrime.splice(0, this.calcularCrime.length);
+      this.historicoCalculadora.splice(0, this.historicoCalculadora.length);
+    }
+
 }

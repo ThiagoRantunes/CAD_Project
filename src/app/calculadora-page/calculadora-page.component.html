@@ -6,33 +6,33 @@
         <div class="box-left">
             <div class="form">   
                 <div class="input">
-                    <input type="text" id="input" required="">
+                    <input type="text" id="input" required="" [(ngModel)]="nomeDoReu">
                     <label for="input" class="label">Nome do Réu: </label>
                     <div class="underline"></div>
                 </div>
                 <div class="input">
-                    <input type="text" id="input" required="">
+                    <input type="text" id="input" required="" [(ngModel)]="idadeDoReu">
                     <label for="input" class="label">Idade do Réu: </label>
                     <div class="underline"></div>
                 </div>
                 <div class="input">
-                    <select [ngModel]="selectCrime" name="" id="" class="select">
-                        <option value="valor1" class="14">Bullyng</option>
-                        <option value="valor1" class="6">Invasão de Sistema</option>
-                        <option value="valor1" class="2">Roubo de Identidade</option>
-                        <option value="valor1" class="9">Disseminação de Virus</option>
-                        <option value="valor1" class="10">Phishing</option>
+                    <select [(ngModel)]="this.selectCrime" name="" id="" class="select">
+                        <option value="5" class="14">Bullyng</option>
+                        <option value="6" class="6">Invasão de Sistema</option>
+                        <option value="2" class="2">Roubo de Identidade</option>
+                        <option value="9" class="9">Disseminação de Virus</option>
+                        <option value="1" class="10">Phishing</option>
                     </select>
                     <label for="input" class="label">Crimes: </label>
                     <div class="underline"></div>
                 </div>
                 <div class="input">
-                    <input type="date" id="input" required="">
+                    <input type="date" id="input" required="" [(ngModel)]="dataDoCrime">
                     <label for="input" class="label" id="date">Data do Crime: </label>
                     <div class="underline"></div>
                     </div>
                     <div class="input">
-                    <select name="" id="" class="select">
+                    <select name="" id="" class="select" [(ngModel)]="atenuantes">
                         <option value="valor1" class="option">Menos de Idade</option>
                         <option value="valor1" class="option">Adulto Joven</option>
                         <option value="valor1" class="option">Adulto</option>
@@ -42,7 +42,7 @@
                     <div class="underline"></div>
                 </div>
                 <div class="input">
-                    <select name="" id="" class="select">
+                    <select name="" id="" class="select" [(ngModel)]="agravantes">
                         <option value="valor1" class="option">Reicidendia</option>
                         <option value="valor1" class="option">Crime organizado</option>
                     </select>
@@ -50,12 +50,12 @@
                     <div class="underline"></div>
                 </div>
                 <div class="input">
-                    <input type="text" id="input" required="">
+                    <input type="text" id="input" required="" [(ngModel)]="multa">
                     <label for="input" class="label">Multa: </label>
                     <div class="underline"></div>
                 </div>
                 <div class="input">
-                    <input type="text" id="input" readonly>
+                    <input type="text" id="input" value="{{this.numberReal}}" readonly>
                     <label for="input" class="label">Pena: </label>
                     <div class="underline"></div>
                 </div>
@@ -70,7 +70,7 @@
             <div class="buttons">
                 <div class="group-text">
                     <button (click)="calcular()" class="btn" style="background-color: green;">CALCULAR</button>
-                    <button class="btn" style="background-color: rgb(224, 1, 1);">LIMPAR</button>
+                    <button (click)="limparDados()" class="btn" style="background-color: rgb(224, 1, 1);">LIMPAR</button>
                     <button class="btn" style="background-color: black;">PDF</button>
                 </div>
                 <div class="group-icon">
