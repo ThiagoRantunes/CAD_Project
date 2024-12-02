@@ -13,9 +13,9 @@ export class LoginPageComponent {
 
   // Array de usuários válidos
   validUsers = [
-    { email: 'user1@example.com', password: 'password1' },
-    { email: 'user2@example.com', password: 'password2' },
-    { email: 'admin@example.com', password: 'admin123' }
+    { email: 'admin1@fatec.com', password: '123' },
+    { email: 'admin2@fatec.com', password: '123' },
+    { email: 'admin3@fatec.com', password: '123' }
   ];
 
   constructor(private router: Router) {}
