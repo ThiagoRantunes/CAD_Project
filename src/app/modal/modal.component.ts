@@ -25,4 +25,6 @@ export class ModalComponent {
   closeModal(){
     this.isCloseModal.emit();
   }
+  
+ 
 }

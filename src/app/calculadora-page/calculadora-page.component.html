@@ -16,10 +16,12 @@
                     <div class="underline"></div>
                 </div>
                 <div class="input">
-                    <select name="" id="" class="select">
-                        <option value="valor1" class="option">Valor 1</option>
-                        <option value="valor1" class="option">Valor 2</option>
-                        <option value="valor1" class="option">Valor 3</option>
+                    <select [ngModel]="selectCrime" name="" id="" class="select">
+                        <option value="valor1" class="14">Bullyng</option>
+                        <option value="valor1" class="6">Invasão de Sistema</option>
+                        <option value="valor1" class="2">Roubo de Identidade</option>
+                        <option value="valor1" class="9">Disseminação de Virus</option>
+                        <option value="valor1" class="10">Phishing</option>
                     </select>
                     <label for="input" class="label">Crimes: </label>
                     <div class="underline"></div>
@@ -28,21 +30,21 @@
                     <input type="date" id="input" required="">
                     <label for="input" class="label" id="date">Data do Crime: </label>
                     <div class="underline"></div>
-                </div>
-                <div class="input">
+                    </div>
+                    <div class="input">
                     <select name="" id="" class="select">
-                        <option value="valor1" class="option">Valor 1</option>
-                        <option value="valor1" class="option">Valor 2</option>
-                        <option value="valor1" class="option">Valor 3</option>
+                        <option value="valor1" class="option">Menos de Idade</option>
+                        <option value="valor1" class="option">Adulto Joven</option>
+                        <option value="valor1" class="option">Adulto</option>
+                        <option value="valor1" class="option">Idoso</option>
                     </select>
                     <label for="input" class="label">Atenuantes: </label>
                     <div class="underline"></div>
                 </div>
                 <div class="input">
                     <select name="" id="" class="select">
-                        <option value="valor1" class="option">Valor 1</option>
-                        <option value="valor1" class="option">Valor 2</option>
-                        <option value="valor1" class="option">Valor 3</option>
+                        <option value="valor1" class="option">Reicidendia</option>
+                        <option value="valor1" class="option">Crime organizado</option>
                     </select>
                     <label for="input" class="label">Agravantes: </label>
                     <div class="underline"></div>
@@ -67,7 +69,7 @@
             </div>
             <div class="buttons">
                 <div class="group-text">
-                    <button class="btn" style="background-color: green;">CALCULAR</button>
+                    <button (click)="calcular()" class="btn" style="background-color: green;">CALCULAR</button>
                     <button class="btn" style="background-color: rgb(224, 1, 1);">LIMPAR</button>
                     <button class="btn" style="background-color: black;">PDF</button>
                 </div>
